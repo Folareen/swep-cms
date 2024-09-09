@@ -1,5 +1,4 @@
 import { FaRegUser } from 'react-icons/fa6'
-import { FiPhoneCall } from 'react-icons/fi'
 import { LuCalendarClock } from 'react-icons/lu'
 import { Link } from 'react-router-dom'
 import landingBg from '../assets/landing-bg.png'
