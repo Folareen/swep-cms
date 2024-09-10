@@ -4,7 +4,7 @@ import Error from '../../components/Error'
 import Logo from '../../components/Logo'
 import Spinner from '../../components/Spinner'
 import useFetch from '../../hooks/useFetch'
-import { getDateAndTime } from '../../utils/formatDate'
+import { getDate } from '../../utils/formatDate'
 
 // const data = [
 //     {
@@ -67,7 +67,7 @@ const ViewAppointments = () => {
                                         data?.data?.map(({ id, patient_first_name, patient_last_name, patient_email, date, shift, start_time, end_time, reason }: any) => (
                                             <tr className='text-[10px] md:text-xs border-b-gray-200 border-b-[1px]'>
                                                 <td className='px-2 py-3 md:px-4 md:py-5 '>
-                                                    {getDateAndTime(date)}
+                                                    {getDate(date)}
                                                 </td>
                                                 <td className='px-2 py-3 md:px-4 md:py-5'>
                                                     {shift}

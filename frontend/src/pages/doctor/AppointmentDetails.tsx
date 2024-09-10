@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom'
 import landingBg from '../../assets/landing-bg.png'
-import Logo from '../../components/Logo'
-import { getDateAndTime } from '../../utils/formatDate'
-import useFetch from '../../hooks/useFetch'
 import Error from '../../components/Error'
+import Logo from '../../components/Logo'
 import Spinner from '../../components/Spinner'
+import useFetch from '../../hooks/useFetch'
+import { getDate } from '../../utils/formatDate'
 
 // const data = {
 //     id: 1,
@@ -57,7 +57,7 @@ const AppointmentDetails = () => {
                         :
                         data ?
                             <div className=' w-[90%] max-w-3xl mx-auto mt-10 text-lg' >
-                                <Row title='date' value={getDateAndTime(data?.data?.date)} />
+                                <Row title='date' value={getDate(data?.data?.date)} />
                                 <Row title='shift' value={data?.shift} />
                                 <Row title='timeline' value={data?.start_time + ' - ' + data?.end_time} />
                                 <Row title='patient name' value={data?.patient_first_name + ' ' + data?.patient_last_name} />
