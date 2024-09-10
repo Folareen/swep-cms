@@ -22,7 +22,7 @@ import { getDate } from '../../utils/formatDate'
 
 const ViewAppointments = () => {
 
-    const { loading, data, error } = useFetch(`/appointments/doctor-appointments/`, [])
+    const { loading, data, error } = useFetch(`/doctors/appointments/`, [])
 
     return (
         <div className='bg-cover min-h-screen w-full font-montserrat ' style={{ backgroundImage: `url(${landingBg})` }}>
