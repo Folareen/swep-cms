@@ -25,7 +25,6 @@ const Signup = () => {
             toast.success('Sign up successful!')
             navigate('/login')
         } catch (error: any) {
-            console.log(error)
             toast.error(error?.message || error)
         } finally {
             setSubmitting(false)
@@ -37,14 +36,14 @@ const Signup = () => {
     return (
         <div className='bg-cover min-h-screen w-full font-montserrat' style={{ backgroundImage: `url(${landingBg})` }}>
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 '>
-                <Link to='/' className='flex justify-center items-center space-x-6'>
-                    <img src={oauLogo} className='w-40 h-40 object-contain ' />
+                <Link to='/' className='flex justify-center items-center space-x-4'>
+                    <img src={oauLogo} className='w-32 h-32 object-contain ' />
                     <h1 className='text-[rgba(1,0,128,1)] text-[64px] font-montserrat font-semibold text-center leading-[78px]'>
                         OAU <br /> E-health Centre
                     </h1>
                 </Link>
 
-                <form className='w-1/2 mx-auto mt-10' onSubmit={handleSubmit}>
+                <form className='w-4/5 md:w-2/5 mx-auto mt-10' onSubmit={handleSubmit}>
 
                     <h2 className='text-4xl text-[rgba(0,0,0,1)]  font-montserrat font-bold'>
                         Create New Account
@@ -54,7 +53,7 @@ const Signup = () => {
                     </p>
 
                     <div className='mb-5'>
-                        <p className='text-3xl mb-1'>
+                        <p className='text-2xl mb-1'>
                             Email
                         </p>
                         <input type="email" className='bg-[rgba(139,136,136,1)] rounded-[10px] py-4 px-5 w-full text-white' value={email} onChange={(e) => {
@@ -63,7 +62,7 @@ const Signup = () => {
                     </div>
 
                     <div className='mb-5'>
-                        <p className='text-3xl mb-1'>
+                        <p className='text-2xl mb-1'>
                             Surname
                         </p>
                         <input type="text" className='bg-[rgba(139,136,136,1)] rounded-[10px] py-4 px-5 w-full text-white' value={lastName} onChange={(e) => {
@@ -72,7 +71,7 @@ const Signup = () => {
                     </div>
 
                     <div className='mb-5'>
-                        <p className='text-3xl mb-1'>
+                        <p className='text-2xl mb-1'>
                             Other Name
                         </p>
                         <input type="text" className='bg-[rgba(139,136,136,1)] rounded-[10px] py-4 px-5 w-full text-white' value={firstName} onChange={(e) => {
@@ -81,7 +80,7 @@ const Signup = () => {
                     </div>
 
                     <div className='mb-5'>
-                        <p className='text-3xl mb-1'>
+                        <p className='text-2xl mb-1'>
                             Password
                         </p>
                         <input type="password" className='bg-[rgba(139,136,136,1)] rounded-[10px] py-4 px-5 w-full text-white' value={password} onChange={(e) => {
@@ -90,7 +89,7 @@ const Signup = () => {
                     </div>
 
                     <div className='mb-5'>
-                        <p className='text-3xl mb-1'>
+                        <p className='text-2xl mb-1'>
                             Confirm Password
                         </p>
                         <input type="password" className='bg-[rgba(139,136,136,1)] rounded-[10px] py-4 px-5 w-full text-white' value={passwordConfirmation} onChange={(e) => {
@@ -98,7 +97,7 @@ const Signup = () => {
                         }} />
                     </div>
 
-                    <button className='bg-[rgba(1,0,128,1)] px-40 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl w-full my-5 flex justify-center' onClick={handleSubmit}>
+                    <button className='bg-[rgba(1,0,128,1)] py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl w-full mt-8 mb-5 flex justify-center' onClick={handleSubmit}>
                         {
                             submitting ?
                                 <Spinner size='small' /> :
@@ -109,7 +108,7 @@ const Signup = () => {
                     <p className='text-2xl text-center mt-2.5'>
                         Have an account?
                     </p>
-                    <Link to='/login' className='text-[rgba(1,0,128,1)] text-center block font-semibold text-3xl mt-1'>
+                    <Link to='/login' className='text-[rgba(1,0,128,1)] text-center block font-semibold text-2xl mt-1'>
                         Login
                     </Link>
 

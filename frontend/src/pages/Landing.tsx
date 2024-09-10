@@ -1,14 +1,13 @@
+import { Link } from 'react-router-dom'
 import landingBg from '../assets/landing-bg.png'
 import oauLogo from '../assets/oau-logo.png'
-import firstAid from '../assets/first-aid.png'
-import { Link } from 'react-router-dom'
 
 const Landing = () => {
     return (
         <div className='bg-cover min-h-screen w-full' style={{ backgroundImage: `url(${landingBg})` }}>
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 '>
                 <Link to='/' className='flex justify-center items-center space-x-6'>
-                    <img src={oauLogo} className='w-40 h-40 object-contain ' />
+                    <img src={oauLogo} className='w-40 h-40 object-contain' />
                     <h1 className='text-[rgba(1,0,128,1)] text-[64px] font-montserrat font-semibold text-center leading-[78px]'>
                         OAU <br /> E-health Centre
                     </h1>
@@ -16,20 +15,18 @@ const Landing = () => {
                 <h2 className='text-5xl text-[rgba(0,0,0,1)] text-center my-10 font-montserrat font-semibold'>
                     Welcome To OAU E-health!
                 </h2>
-                <div className='flex items-center justify-center space-x-10'>
-                    <Link to='/login' className='bg-[rgba(1,0,128,1)] px-40 py-2.5 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
+                <div className='flex flex-col md:flex-row items-center justify-center  md:space-x-10 my-20 text-center'>
+                    <Link to='/login' className='bg-[rgba(1,0,128,1)] w-4/5 md:w-1/4 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
                         Login
                     </Link>
-                    <Link to='/sign-up' className='bg-[rgba(1,0,128,1)] px-40 py-2.5 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
+                    <Link to='/sign-up' className='bg-[rgba(1,0,128,1)] w-4/5 md:w-1/4 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
                         Sign Up
                     </Link>
                 </div>
-                <div className='flex flex-start space-x-3 my-6'>
-                    <h3 className='flex-1 text-right text-[rgba(255,0,0,1)] text-5xl font-bold font-montserrat '>
-                        Guides To Use First Aid and Kit?
-                    </h3>
-                    <img src={firstAid} alt="" className='w-[206px] h-[130px] object-contain' />
-                </div>
+                <h3 className='flex-1 text-center text-[rgba(255,0,0,1)] text-5xl font-bold font-montserrat mb-2 '>
+                    Guides To Use First Aid and Kit?
+                </h3>
+                {/* <img src={firstAid} alt="" className='w-[206px] h-[130px] object-contain' /> */}
                 <ol className='font-montserrat text-3xl leading-[40px] font-bold list-decimal px-6' >
                     <li>
                         Assess the Situation:

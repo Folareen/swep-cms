@@ -11,9 +11,7 @@ export type AuthState = {
 const useAuthStore = create<AuthState>((set) => ({
     user: null,
     authenticate(token: string) {
-        console.log(token, 'seee')
         const user: any = jwtDecode(token)
-        console.log(user, 'in useauthstore')
         setAxiosToken(token)
         localStorage.removeItem('token')
         localStorage.setItem('token', token)
