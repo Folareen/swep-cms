@@ -26,7 +26,7 @@ const Row = ({ title, value }: { title: string, value: string }) => {
 const PatientDashboard = () => {
     const { user, logout } = useAuthStore()
 
-    const { loading, data, error } = useFetch(`/appointments/user-appointments/`, [])
+    const { loading, data, error } = useFetch(`/users/user-appointments/`, [])
 
     const navigate = useNavigate()
 
