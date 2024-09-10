@@ -7,8 +7,8 @@ const Landing = () => {
         <div className='bg-cover min-h-screen w-full' style={{ backgroundImage: `url(${landingBg})` }}>
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 '>
                 <Logo />
-                <h2 className='text-3xl md:text-5xl text-[rgba(0,0,0,1)] text-center my-10 font-montserrat font-semibold'>
-                    Welcome To OAU E-health!
+                <h2 className='text-2xl sm:text-3xl md:text-5xl text-[rgba(0,0,0,1)] text-center my-10 font-montserrat font-semibold break-words whitespace-normal'>
+                    Welcome To OAU E&#8209;health!
                 </h2>
                 <div className='flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-10 my-20 text-center'>
                     <Link to='/login' className='bg-[rgba(1,0,128,1)] w-[90%] md:w-1/4 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
