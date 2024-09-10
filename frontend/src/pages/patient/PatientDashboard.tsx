@@ -16,7 +16,7 @@ const Row = ({ title, value }: { title: string, value: string }) => {
             <p className='w-1/2 bg-[#315d9f] text-[#c8d1e2] font-medium px-5 py-3 rounded-l-[4px] capitalize'>
                 {title}
             </p>
-            <p className='w-1/2 text-[#315d9f] bg-[#c8d1e2] font-semibold px-5 py-3 rounded-l-[4px]'>
+            <p className='w-1/2 text-[#315d9f] bg-[#c8d1e2] font-semibold px-5 py-3 rounded-l-[4px] break-words break-all text-sm md:text-base'>
                 {value}
             </p>
         </div>
