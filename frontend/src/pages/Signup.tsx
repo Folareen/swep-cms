@@ -2,7 +2,7 @@ import { FormEvent, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import landingBg from '../assets/landing-bg.png'
-import oauLogo from '../assets/oau-logo.png'
+import Logo from '../components/Logo'
 import Spinner from '../components/Spinner'
 import { signup } from '../services/auth'
 
@@ -36,12 +36,7 @@ const Signup = () => {
     return (
         <div className='bg-cover min-h-screen w-full font-montserrat' style={{ backgroundImage: `url(${landingBg})` }}>
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 '>
-                <Link to='/' className='flex justify-center items-center space-x-4'>
-                    <img src={oauLogo} className='w-32 h-32 object-contain ' />
-                    <h1 className='text-[rgba(1,0,128,1)] text-[64px] font-montserrat font-semibold text-center leading-[78px]'>
-                        OAU <br /> E-health Centre
-                    </h1>
-                </Link>
+                <Logo />
 
                 <form className='w-[90%] md:w-2/5 mx-auto mt-10' onSubmit={handleSubmit}>
 

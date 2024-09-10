@@ -1,17 +1,12 @@
 import { Link } from 'react-router-dom'
 import landingBg from '../assets/landing-bg.png'
-import oauLogo from '../assets/oau-logo.png'
+import Logo from '../components/Logo'
 
 const Landing = () => {
     return (
         <div className='bg-cover min-h-screen w-full' style={{ backgroundImage: `url(${landingBg})` }}>
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 '>
-                <Link to='/' className='flex justify-center items-center space-x-6'>
-                    <img src={oauLogo} className='w-40 h-40 object-contain' />
-                    <h1 className='text-[rgba(1,0,128,1)] text-[64px] font-montserrat font-semibold text-center leading-[78px]'>
-                        OAU <br /> E-health Centre
-                    </h1>
-                </Link>
+                <Logo />
                 <h2 className='text-3xl md:text-5xl text-[rgba(0,0,0,1)] text-center my-10 font-montserrat font-semibold'>
                     Welcome To OAU E-health!
                 </h2>
@@ -27,7 +22,7 @@ const Landing = () => {
                     Guides To Use First Aid and Kit?
                 </h3>
                 {/* <img src={firstAid} alt="" className='w-[206px] h-[130px] object-contain' /> */}
-                <ol className='font-montserrat text-base md:text-xl leading-[40px] font-bold list-decimal px-6' >
+                <ol className='font-montserrat text-base md:text-xl leading-[24px] font-bold list-decimal px-6' >
                     <li>
                         Assess the Situation:
                         <ul className='list-disc'>
