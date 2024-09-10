@@ -37,7 +37,7 @@ const BookAppointment = () => {
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 '>
                 <Logo />
 
-                <form className='w-4/5 md:w-2/5 mx-auto mt-10' onSubmit={handleSubmit}>
+                <form className='w-[90%] md:w-2/5 mx-auto mt-10' onSubmit={handleSubmit}>
 
                     <h2 className='text-[40px] text-black text-center font-montserrat font-bold my-5'>
                         Book Appointment

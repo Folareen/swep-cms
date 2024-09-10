@@ -43,13 +43,13 @@ const PatientDashboard = () => {
                                 <>
                                     <Link to={`/patient/health-information`} className='bg-[#c8d1e2] hover:bg-[#315d9f] flex flex-col px-6 py-10 rounded-[8px] w-full md:w-1/2 lg:w-1/4 justify-center items-center gap-2 hover:text-white'>
                                         <RiHealthBookFill size={50} />
-                                        <p className='font-montserrat text-3xl font-bold text-center'>
+                                        <p className='font-montserrat text-xl md:text-3xl font-bold text-center'>
                                             Health Information
                                         </p>
                                     </Link>
                                     <Link to={`/patient/book-appointment`} className='bg-[#c8d1e2] hover:bg-[#315d9f] flex flex-col px-6 py-10 rounded-[8px] w-full md:w-1/2 lg:w-1/4 justify-center items-center gap-2 hover:text-white'>
                                         <FaCalendarCheck size={50} />
-                                        <p className='font-montserrat text-3xl font-bold text-center'>
+                                        <p className='font-montserrat text-xl md:text-3xl font-bold text-center'>
                                             Book an Appointment
                                         </p>
                                     </Link>

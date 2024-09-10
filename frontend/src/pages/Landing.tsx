@@ -12,22 +12,22 @@ const Landing = () => {
                         OAU <br /> E-health Centre
                     </h1>
                 </Link>
-                <h2 className='text-5xl text-[rgba(0,0,0,1)] text-center my-10 font-montserrat font-semibold'>
+                <h2 className='text-3xl md:text-5xl text-[rgba(0,0,0,1)] text-center my-10 font-montserrat font-semibold'>
                     Welcome To OAU E-health!
                 </h2>
-                <div className='flex flex-col md:flex-row items-center justify-center  md:space-x-10 my-20 text-center'>
-                    <Link to='/login' className='bg-[rgba(1,0,128,1)] w-4/5 md:w-1/4 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
+                <div className='flex flex-col md:flex-row items-center justify-center space-y-3 md:space-y-0 md:space-x-10 my-20 text-center'>
+                    <Link to='/login' className='bg-[rgba(1,0,128,1)] w-[90%] md:w-1/4 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
                         Login
                     </Link>
-                    <Link to='/sign-up' className='bg-[rgba(1,0,128,1)] w-4/5 md:w-1/4 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
+                    <Link to='/sign-up' className='bg-[rgba(1,0,128,1)] w-[90%] md:w-1/4 py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl'>
                         Sign Up
                     </Link>
                 </div>
-                <h3 className='flex-1 text-center text-[rgba(255,0,0,1)] text-5xl font-bold font-montserrat mb-2 '>
+                <h3 className='flex-1 text-center text-red-700 text-xl md:text-4xl font-bold font-montserrat mb-2 '>
                     Guides To Use First Aid and Kit?
                 </h3>
                 {/* <img src={firstAid} alt="" className='w-[206px] h-[130px] object-contain' /> */}
-                <ol className='font-montserrat text-3xl leading-[40px] font-bold list-decimal px-6' >
+                <ol className='font-montserrat text-base md:text-xl leading-[40px] font-bold list-decimal px-6' >
                     <li>
                         Assess the Situation:
                         <ul className='list-disc'>

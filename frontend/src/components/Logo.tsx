@@ -7,8 +7,8 @@ const Logo = () => {
 
     return (
         <Link to={user ? `${user?.role == 'patient' ? '/patient/dashboard' : user?.role == 'doctor' ? '/doctor/dashboard' : '/'}` : '/'} className='flex justify-center items-center space-x-6'>
-            <img src={oauLogo} className='w-28 h-28 object-contain ' />
-            <h1 className='text-[rgba(1,0,128,1)] text-4xl font-montserrat font-bold text-center '>
+            <img src={oauLogo} className='w-12 md:w-28 h-12 md:h-28 object-contain ' />
+            <h1 className='text-[rgba(1,0,128,1)] text-2xl md:text-4xl font-montserrat font-bold text-center '>
                 OAU <br /> E-health Centre
             </h1>
         </Link>

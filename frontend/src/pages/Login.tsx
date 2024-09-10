@@ -42,7 +42,7 @@ const Login = () => {
         <div className='bg-cover min-h-screen w-full font-montserrat' style={{ backgroundImage: `url(${landingBg})` }}>
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 '>
                 <Logo />
-                <form className='w-4/5 md:w-2/5 mx-auto mt-10' onSubmit={handleSubmit}>
+                <form className='w-[90%] md:w-2/5 mx-auto mt-10' onSubmit={handleSubmit}>
 
                     <h2 className='text-4xl text-[rgba(0,0,0,1)]  font-montserrat font-bold'>
                         Welcome!
@@ -68,7 +68,7 @@ const Login = () => {
 
 
                     <div className='mb-5'>
-                        <p className='text-2xl mb-1'>
+                        <p className='text-xl md:text-2xl mb-1'>
                             Email
                         </p>
                         <input type="email" className='bg-[rgba(139,136,136,1)] rounded-[10px] py-4 px-5 w-full text-white' value={email} onChange={(e) => {
@@ -77,7 +77,7 @@ const Login = () => {
                     </div>
 
                     <div>
-                        <p className='text-2xl mb-1'>
+                        <p className='text-xl md:text-2xl mb-1'>
                             Password
                         </p>
                         <input type="password" className='bg-[rgba(139,136,136,1)] rounded-[10px] py-4 px-5 w-full text-white' value={password} onChange={(e) => {
@@ -89,7 +89,7 @@ const Login = () => {
                         Forgot Password?
                     </p>
 
-                    <button className='bg-[rgba(1,0,128,1)] py-3 text-white font-montserrat font-bold rounded-[10px] text-2xl w-full mt-8 mb-5 flex justify-center' onClick={handleSubmit}>
+                    <button className='bg-[rgba(1,0,128,1)] py-3 text-white font-montserrat font-bold rounded-[10px] text-xl md:text-2xl w-full mt-8 mb-5 flex justify-center' onClick={handleSubmit}>
                         {
                             submitting ?
                                 <Spinner size='small' /> :
@@ -100,10 +100,10 @@ const Login = () => {
                     {
                         tab == 'patient' &&
                         <>
-                            <p className='text-2xl text-center mt-2.5'>
+                            <p className='text-xl md:text-2xl text-center mt-2.5'>
                                 Don't have an account?
                             </p>
-                            <Link to='/sign-up' className='text-[rgba(1,0,128,1)] text-center block font-semibold text-2xl mt-1'>
+                            <Link to='/sign-up' className='text-[rgba(1,0,128,1)] text-center block font-semibold text-xl md:text-2xl mt-1'>
                                 Sign Up
                             </Link>
                         </>

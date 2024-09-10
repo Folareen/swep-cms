@@ -58,7 +58,7 @@ const AppointmentDetails = () => {
                         </div>
                         :
                         data ?
-                            <div className=' w-4/5 max-w-3xl mx-auto mt-10 text-lg' >
+                            <div className=' w-[90%] max-w-3xl mx-auto mt-10 text-lg' >
                                 <Row title='date' value={getDateAndTime(data?.data?.date)} />
                                 <Row title='shift' value={data?.shift} />
                                 <Row title='timeline' value={data?.start_time + ' - ' + data?.end_time} />
