@@ -24,8 +24,6 @@ const ViewAppointments = () => {
 
     const { loading, data, error } = useFetch(`/appointments/doctor-appointments/`, [])
 
-    console.log(data, 'see')
-
     return (
         <div className='bg-cover min-h-screen w-full font-montserrat ' style={{ backgroundImage: `url(${landingBg})` }}>
             <div className=' min-h-screen w-full bg-[rgba(255,255,255,0.6)] py-12 px-6 flex flex-col overflow-hidden'>
