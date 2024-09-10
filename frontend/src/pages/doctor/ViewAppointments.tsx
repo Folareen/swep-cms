@@ -42,7 +42,7 @@ const ViewAppointments = () => {
                         data ?
                             <div className='overflow-x-auto'>
                                 <table className='w-full min-w-max bg-white shadow-md rounded-xl  text-[#202224] font-nunito-sans overflow-x-scroll  table-auto text-left mt-10 '>
-                                    <tr className='bg-[#FCFDFD]  text-xs md:text-xs font-bold border-b-gray-200 border-b-[1px]'>
+                                    <tr className='bg-[#FCFDFD]  text-[10px] md:text-xs font-bold border-b-gray-200 border-b-[1px]'>
                                         <th className='p-2 md:p-4'>
                                             Date
                                         </th>
